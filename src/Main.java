@@ -16,7 +16,7 @@ public class Main {
         else System.out.println("Niepodzielny przez 3");
 
 
-        *//* zad.2 użyj parametru trójargumentowego aby sprawdzić parzystośc nr. indeksu *//*
+        //* zad.2 użyj parametru trójargumentowego aby sprawdzić parzystośc nr. indeksu *//*
         System.out.println("podaj index");
         int index = scan.nextInt();
         //int wynik = (zmienna % 2 == 0) ? 0 : 1;
