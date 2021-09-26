@@ -4,41 +4,43 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int zmiennaInt = 7;
-        System.out.println("zmienna int = " + zmiennaInt);
-        /* ćw.2 */
+        /* ćw.3 */
 
-        /*   zad.1 zadeklaruj i zainicjalizuj zmienne różnych typów i wyświetl w konsoli (im więcej tym lepiej ;) ) */
-            byte zbyte = 73;
-            short zshort = 7329;
-            int zint = 732;
-            int xint = 83;
-            long zlong = 238919238;
-            float zfloat = 83.23f;
-            double zdoube = 93832.747;
-            double ydoube = 832.32;
-            boolean zboolean = false;
-            char zchar = 'j';
-            String zstring = "jjhfb";
+        /*  zad.1 napisać interfejs który bedzie słuzył do wpisania danych osobowych:
+         *   a) Imię, nazwisko, wiek, nr indeksu,
+         *   dane mają być wprowadzane z klawiatury w konsoli
+         *   b) wyświetlić dane za pomocą println i printf
+         */
+            String imie;
+            String nazwisko;
+            int wiek;
+            int index;
 
+            Scanner scan = new Scanner(System.in);
+            System.out.println("podaj imie");
+            imie = scan.next();
+            System.out.println("podaj nazwisko");
+            nazwisko = scan.next();
+            System.out.println("podaj wiek");
+            wiek = scan.nextInt();
+            System.out.println("podaj indeks");
+            index = scan.nextInt();
 
-        /*
-         *    zad.2 Napisz kod który będzie wykonywał operacje: dodawania, odejmowania,
-         *    mnożenia, dziealenia i modulo na zmiennych:
-         *    a) liczbaA i liczbaB, dowolne liczby calkowite (int),
-         *    b) liczbaX i liczbaY, dowolne liczby zmiennoprzecinkowe (double)
-         *  */
-        System.out.println("int dodawanie = " + (zint + xint));
-        System.out.println("int odejmowanie = " + (zint - xint));
-        System.out.println("int mnozenie = " + (zint * xint));
-        System.out.println("int dzielenie = " + (zint / xint));
-        System.out.println("int modulo = " + (zint % xint));
+            System.out.println("imie = " + imie);
+            System.out.println("nazwisko = " + nazwisko);
+            System.out.printf("wiek = " + wiek + "\n");
+            System.out.printf("indeks = " + index + "\n");
 
-        System.out.println("double dodawanie = " + (zdoube + ydoube));
-        System.out.println("double odejmowanie = " + (zdoube - ydoube));
-        System.out.println("double mnozenie = " + (zdoube * ydoube));
-        System.out.println("double dzielenie = " + (zdoube / ydoube));
-        System.out.println("double modulo = " + (zdoube % ydoube));
-
+        /*  zad.2 zadeklarować 2 zmienne typu int i wykonać na nich obliczenia arytmetyczn (+, -, *, /, %)
+         *   wynik wyświetlić w konsoli programu
+         */
+        System.out.println("podaj 2 liczby");
+        int x = scan.nextInt();
+        int y = scan.nextInt();
+        System.out.println("+ " + (x + y));
+        System.out.println("- " + (x - y));
+        System.out.println("* " + (x * y));
+        System.out.println("/ " + (x / y));
+        System.out.println("% " + (x % y));
     }
 }
