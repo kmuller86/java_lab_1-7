@@ -9,6 +9,7 @@ public class Main {
 
         /* zad1. stworzyć tablicę typu double 5-cio elementową,
         przypisać do niej wartości i wyświetlić */
+        /* double miał być */
         Scanner scan = new Scanner(System.in);
         int[] tab = new int[5];
 
